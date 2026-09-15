@@ -27,7 +27,7 @@
 <main>
   <h1>NOCK</h1>
   <div class="rule"></div>
-  <p class="when">Privacy Policy · last updated 10 September 2026</p>
+  <p class="when">Privacy Policy · last updated 15 September 2026</p>
 
   <p>Nock is a puzzle game published by Vartix. It has no accounts, no sign-in
   and no social features, and it asks you for nothing about yourself. This page
@@ -35,9 +35,24 @@
   app does very little.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> We operate no servers and receive no data from
-  the app. There is no analytics SDK, no crash reporter and no tracking of any
-  kind belonging to us.</p>
+  <p>We operate no servers of our own. Since version 1.0.1 the app uses
+  <strong>Google Analytics for Firebase</strong> to tell us how the game is
+  played, so that we can see which levels are too hard and whether players
+  come back. It records:</p>
+  <ul>
+    <li>when a level is started and finished, with the level number, the
+    number of mistakes, the score and the number of taps</li>
+    <li>when a player runs out of lives, and when a life is earned by watching
+    an ad</li>
+    <li>the standard information Firebase collects automatically: an app
+    instance identifier, device model, operating system version, country,
+    language, and when the app was first opened and used</li>
+  </ul>
+  <p>It does not record your name, email, contacts, location, or anything you
+  type — the game has nowhere to type anything. Nothing is collected until the
+  consent form (where required) has been shown. Google processes this data
+  under its own terms:
+  <a href="https://firebase.google.com/support/privacy">Firebase privacy and security</a>.</p>
 
   <h2>What stays on your phone</h2>
   <p>The game saves your progress in the app's own private storage on the
@@ -48,8 +63,8 @@
     <li>how many lives you hold and when the next one is due</li>
     <li>whether sound is on</li>
   </ul>
-  <p>None of it leaves the device and none of it identifies you. Uninstalling
-  the app deletes all of it.</p>
+  <p>This progress data stays on the device and is not sent anywhere.
+  Uninstalling the app deletes it.</p>
 
   <h2>Advertising</h2>
   <p>The game shows ads through <strong>Google AdMob</strong>, which is a
@@ -79,10 +94,17 @@
   any information from them. If you believe a child has provided information
   through this app, contact us and we will act on it.</p>
 
+  <h2>Deleting analytics data</h2>
+  <p>Analytics data is tied to an app instance identifier, not to you.
+  Uninstalling the app resets that identifier. To ask for data already
+  collected to be deleted, write to the address below and we will request its
+  deletion from Firebase.</p>
+
   <h2>Permissions</h2>
   <p>The app requests internet and network-state access, and the advertising ID
-  permission. All of them exist to load ads; the game itself makes no network
-  requests and works offline apart from the ads.</p>
+  permission. They exist to load ads and to send the analytics events above.
+  The game itself works fully offline; ads and analytics simply wait until a
+  connection is available.</p>
 
   <h2>Changes</h2>
   <p>If this policy changes, the date at the top of this page changes with it.
