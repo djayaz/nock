@@ -44,10 +44,19 @@
     number of mistakes, the score and the number of taps</li>
     <li>when a player runs out of lives, and when a life is earned by watching
     an ad</li>
+    <li>when a level is left unfinished, and how much of it was cleared; when a
+    hint is used; how long a level took</li>
+    <li>whether an ad was available, shown or failed to load, and whether the
+    consent form allowed ads</li>
+    <li>when the game had no internet connection, and for how long</li>
     <li>the standard information Firebase collects automatically: an app
     instance identifier, device model, operating system version, country,
     language, and when the app was first opened and used</li>
   </ul>
+  <p>Since version 1.2 the app also uses <strong>Firebase Crashlytics</strong>.
+  If the game crashes or hits an error, it sends a crash report: the error and
+  where in the code it happened, the level being played, the device model,
+  operating system version and an installation identifier.</p>
   <p>It does not record your name, email, contacts, location, or anything you
   type — the game has nowhere to type anything. Nothing is collected until the
   consent form (where required) has been shown. Google processes this data
